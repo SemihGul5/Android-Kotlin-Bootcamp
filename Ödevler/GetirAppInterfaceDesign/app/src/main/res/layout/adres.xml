@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellow"
+    android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/card_view_adres"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:elevation="8dp"
+            android:layout_weight="4"
+            android:background="@drawable/adres"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/adres_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Ev,"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/adres_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Mimar Sinan, Atatürk Cd. No:1, ..."
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24"
+
+                            />
+                </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/card_view_tvs"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:elevation="8dp"
+            android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                        <TextView
+                            android:id="@+id/tvs_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="TVS"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/main_color"
+                            />
+                        <TextView
+                            android:id="@+id/tvs_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="20-30 dk"
+                            android:layout_marginTop="2dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/main_color"
+                            />
+                </LinearLayout>
+
+        </FrameLayout>
+</LinearLayout>
